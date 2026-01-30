@@ -8,4 +8,14 @@ public class User {
         this.name = name;
         this.role = role;
     }
+
+    public String getId() {
+        return id;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getRole() {
+        return role;
+    }
 }
