@@ -15,6 +15,7 @@ public class Validator {
         }
         String regex = "^[a-zA-Z\\s]+$";
         return name.matches(regex);
+        
     }
     public static boolean isValidFloorInput(String number) {
         number = number.trim();
@@ -26,6 +27,20 @@ public class Validator {
         if(isValidFloorInput){
             int floorNumber = Integer.parseInt(number);
             return floorNumber >= 1 && floorNumber <= 10;
+        } else {
+            return false;
+        }
+    }
+    public static boolean isValidSlotInput(String number) {
+        number = number.trim();
+        if(number.isEmpty()){
+            return false;
+        }
+        String regex = "^[0-9]+$";
+        boolean isValidSlotInput = number.matches(regex);
+        if(isValidSlotInput){
+            int slotNumber = Integer.parseInt(number);
+            return slotNumber >= 1 && slotNumber <= 1000;
         } else {
             return false;
         }
