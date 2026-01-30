@@ -13,9 +13,12 @@ public class Validator {
         if(name.isEmpty()){
             return false;
         }
+        if(name.length() > 20){
+            return false;
+        }
         String regex = "^[a-zA-Z\\s]+$";
         return name.matches(regex);
-        
+
     }
     public static boolean isValidFloorInput(String number) {
         number = number.trim();
