@@ -88,27 +88,6 @@ Unparking: When a vehicle leaves, release the spot and calculate the fee.
 
 ---
 
-## Project Structure
-```
-SmartPark/
-├── src/
-│ ├── enums/
-│ │ ├── VehicleType.java
-│ │ └── SlotType.java
-│ ├── model/
-│ │ ├── ParkingLot.java
-│ │ ├── Floor.java
-│ │ ├── ParkingSlot.java
-│ │ ├── Vehicle.java
-│ │ └── Ticket.java
-│ ├── service/
-│ │ └── ParkingService.java
-│ └── SmartParkApp.java
-└── README.md
-```
-
----
-
 ## How to Run
 1. Clone the repository
 2. Compile the project
