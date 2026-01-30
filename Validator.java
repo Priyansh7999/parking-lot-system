@@ -4,6 +4,13 @@ public class Validator {
         // Indian mobile number pattern with 10 digits starting from 6-9 and with country code optional and spaces and hyphens allowed and parentheses around area code optional and 0 prefix optional
         String regex = "^(\\+91[\\-\\s]?|0)?[6-9]\\d{9}$";
         return mobileNumber.matches(regex);
-        
+
     }
+    public static boolean isValidPersonName(String name) {
+        name = name.trim();
+        // General name pattern (only letters and spaces)
+        String regex = "^[a-zA-Z\\s]+$";
+        return name.matches(regex);
+    }
+
 }
