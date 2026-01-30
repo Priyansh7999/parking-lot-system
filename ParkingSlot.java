@@ -5,7 +5,7 @@ public class ParkingSlot {
     private final String id;
     private final SlotType type;
     private boolean occupied;
-    private String vehicleId;
+    
 
     public ParkingSlot(SlotType type) {
         this.id = UUID.randomUUID().toString();
